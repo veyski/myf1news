@@ -1,11 +1,12 @@
 import axios from "axios";
+import { API_KEY } from "./env";
 
 const apiClient = axios.create({
   baseURL: "https://f1-latest-news.p.rapidapi.com/",
   headers: {
     "Content-Type": "application/json",
     "x-rapidapi-host": "f1-latest-news.p.rapidapi.com",
-    "x-rapidapi-key": "0aea117e3bmsh9a34ef63c9d0e12p1e2678jsn73247777000b",
+    "x-rapidapi-key": API_KEY,
   },
 });
 
